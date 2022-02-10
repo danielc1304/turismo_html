@@ -4,7 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Formulario de Contacto</title>
+
+    <style>
+      #section {
+        padding: 50px;
+        background-color: beige;
+      }
+      #enlaces {
+        color: rgb(88, 163, 31);
+        text-decoration: none;
+        }
+    </style>
   </head>
-  <body></body>
+  <body style="margin: 0%; background-color: beige">
+
+    <header style="background-color: beige;">
+      <img src="src/penon.jpg" width="100%" height="370" alt="Portada" />
+      <nav style="text-align: center; background-color: beige;">
+        <span style="font-size: 24px; padding: 12px;"
+          ><a id="enlaces" href="/index.html">
+            <b>Inicio</b>
+          </a>
+          &nbsp &nbsp &nbsp &nbsp &nbsp
+          <a id="enlaces" href="/aboutme.html">
+            <b>Sobre mi</b>
+          </a>
+          &nbsp &nbsp &nbsp &nbsp &nbsp
+          <a id="enlaces" href="/gallery.html">
+            <b>Galería</b>
+          </a>
+          &nbsp &nbsp &nbsp &nbsp &nbsp
+          <a id="enlaces" href="#">
+            <b>Contacto</b>
+          </a></span
+        >
+      </nav>
+
+      <h2 style="padding:20px">Formulario de registro para guías turísticos:</h2><br>
+    <section style="padding: 0px 80px 20px 80px">
+    
+    <form action="formSuccess.html" method="POST">
+      <label for="name">Nombre Completo</label>
+      <input type="text" name="name" id="name" /><br>
+
+      <br /><label for="text">Correo</label>
+      <input type="text" name="password" id="password" /><br>
+
+      <br /><label for="age">Edad</label>
+      <input type="number" name="age" id="age" step="1" /><br>
+
+      <br /><label for="phone">Telefono</label>
+      <input type="number" name="phone" id="phone" /><br>
+
+      <br><label for="hobbies">Hobbies favoritos:</label><br>
+        <label for="swim">Nadar</label>
+        <input type="checkbox" name="swim" id="swim">
+        <label for="run">Correr</label>
+        <input type="checkbox" name="run" id="run">
+        <label for="eat">Comer</label>
+        <input type="checkbox" name="eat" id="eat">
+        <label for="read">Leer</label>
+        <input type="checkbox" name="read" id="read"><br>
+        <label for="travel">Viajar</label>
+        <input type="checkbox" name="travel" id="travel">
+        <label for="sleep">Dormir</label>
+        <input type="checkbox" name="sleep" id="sleep">
+        <label for="adv">Aventuras</label>
+        <input type="checkbox" name="adv" id="adv">
+        <label for="sport">Deporte</label>
+        <input type="checkbox" name="sport" id="sport"><br><br>
+      
+        <label for="genre">Dime tu género:</label>
+        <select name="genre" id="genre">
+            <option value="none"></option>
+            <option value="male">Masculino</option>
+            <option value="female">Femenino</option>
+            <option value="nonbinary">No binario</option>
+            <option value="dont">Prefiero no decirlo</option>
+        </select><br><br>
+
+        <label for="city">Ciudad donde vives:</label>
+        <select name="city" id="city">
+            <option value="none"></option>
+            <option value="cali">Cali</option>
+            <option value="cartagena">Cartagena</option>
+            <option value="medellin">Medellín</option>
+            <option value="bogota">Bogotá</option>
+            <option value="otro">Otra</option>
+        </select><br>
+        <label for="otra">Si otra, cuál:</label>
+        <input type="text" name="otra" id="otra"/><br><br>
+
+        <label for="comments">Dejanos tus comentarios</label><br>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea><br>
+        <input type="submit" value="Enviar"><br>
+    </form>
+      </section>
+  </body>
 </html>
